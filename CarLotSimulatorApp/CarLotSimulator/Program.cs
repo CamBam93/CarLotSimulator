@@ -47,13 +47,8 @@ namespace CarLotSimulator
 
             Console.WriteLine("----------------");
 
-                
-            foreach(var car in lot.CarList)
-            {
-                Console.WriteLine($"Year-{car.Year} Make-{car.Make} Model-{car.Model}");
-                Console.WriteLine("----------");
-            }
-            
+
+
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
@@ -64,6 +59,14 @@ namespace CarLotSimulator
             //It should have at least one property: a List of cars
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
+
+            Console.WriteLine($"You have {CarLot.numberOfCars} cars in your lot.");
+            Console.WriteLine("");
+            foreach(var car in lot.CarList)
+            {
+                Console.WriteLine($"Year-{car.Year} Make-{car.Make} Model-{car.Model}");
+                Console.WriteLine("----------");
+            }
         }
     }
 }
